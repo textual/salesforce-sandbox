@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>OmniauthDemo</title>
+  <title>force api</title>
   <%= stylesheet_link_tag :all %>
   <%= javascript_include_tag :defaults %>
   <%= csrf_meta_tag %>
 </head>
 <body>
   <div id="user_nav"> 
-      <%= link_to "Sign in with Force.com", "/auth/forcedotcom" %> 
+			<%= link_to "Home", :root %> | 
+      <%= link_to "Sign in with Force.com", "/auth/forcedotcom" %> |
+			<%= link_to "Tasks", "/tasks" %>
   </div>
-
+	<hr/>
+	<%= yield %>
+	
 </body>
 </html>

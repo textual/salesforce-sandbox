@@ -23,6 +23,8 @@ class Accounts
 
   def self.get_all_by_last_name(last_name)
     #TODO
+    Accounts.set_headers
+    get(Accounts.root_url+"/query/?q=#{CGI::escape('SELECT Name, Id from Account LIMIT 100')}")
   end
 
 end
