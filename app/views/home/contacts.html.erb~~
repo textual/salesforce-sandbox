@@ -1,0 +1,2 @@
+<h1>contacts</h1>
+<%= @accounts.get_first_hundred %>

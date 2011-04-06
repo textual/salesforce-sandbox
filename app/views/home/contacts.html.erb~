@@ -2,5 +2,3 @@
 <% @accounts['records'].each do |record| %>
   <p><%= record['Name'] %></p>
 <% end %>
-<hr/>
-<%= @accounts %>
