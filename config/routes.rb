@@ -1,7 +1,8 @@
 OmniauthDemo::Application.routes.draw do
   resources :tasks
-
+  
   get "home/index"
+  match "home/contacts", :to => 'home#contacts'
 
   get "sessions/create"
 
@@ -11,6 +12,7 @@ OmniauthDemo::Application.routes.draw do
   #add our oauth redirect route - qw
   match '/auth/:provider/callback', :to => 'sessions#create'
   match '/auth/failure', :to => 'sessions#fail'
+  match '/auth/destroy', :to => 'sessions#destroy'
 
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'
