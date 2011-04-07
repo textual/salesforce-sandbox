@@ -1,4 +1,0 @@
-<h1>contacts</h1>
-<% @accounts['records'].each do |record| %>
-  <p><%= record['Name'] %></p>
-<% end %>
