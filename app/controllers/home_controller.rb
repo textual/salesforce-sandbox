@@ -8,5 +8,9 @@ class HomeController < ApplicationController
   def contacts
 	@accounts = Accounts.get_first_hundred
   end
-
+  
+  def dump
+	@accounts = Accounts.get_first_hundred
+  end
+  
 end

@@ -8,15 +8,16 @@
 </head>
 <body>
   <div id="user_nav"> 
-			<%= link_to "Home", :root %> | 
-			<% if @logged_in %>
-			<%= link_to "Log Out", "/auth/destroy" %> |
-			<%= link_to "Contacts", :controller => "home", :action => "contacts"%> |
-			<% else %>
+    <%= link_to "Home", :root %> | 
+    <% if @logged_in %>
+      <%= link_to "Log Out", "/auth/destroy" %> |
+      <%= link_to "Contacts", :controller => "home", :action => "contacts"%> |
+      <%= link_to "dump", :controller => "home", :action => "dump"%> |
+    <% else %>
       <%= link_to "Log In SalesForce", "/auth/forcedotcom" %> |
-			<% end %>
-			<%= link_to "Tasks", "/tasks" %>
-			
+    <% end %>
+    <%= link_to "Tasks", "/tasks" %>
+    
   </div>
 	<hr/>
 	<%= yield %>
