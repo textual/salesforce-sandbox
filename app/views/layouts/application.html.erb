@@ -11,7 +11,8 @@
     <%= link_to "Home", :root %> | 
     <% if @logged_in %>
       <%= link_to "Log Out", "/auth/destroy" %> |
-      <%= link_to "Contacts", :controller => "home", :action => "contacts"%> |
+      <%= link_to "Accounts", :controller => "home", :action => "contacts"%> |
+      <%= link_to "Contracts", :controller => "home", :action => "contracts"%> |
       <%= link_to "dump", :controller => "home", :action => "dump"%> |
     <% else %>
       <%= link_to "Log In SalesForce", "/auth/forcedotcom" %> |

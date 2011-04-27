@@ -3,6 +3,7 @@ OmniauthDemo::Application.routes.draw do
   
   get "home/index"
   match "home/contacts", :to => 'home#contacts'
+  match "home/contracts", :to => 'home#contracts'
   match "home/dump", :to => 'home#dump'
   
   get "sessions/create"

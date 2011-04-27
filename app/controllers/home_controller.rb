@@ -1,4 +1,5 @@
 require 'Accounts'
+require 'Contracts'
 
 class HomeController < ApplicationController
   
@@ -9,8 +10,12 @@ class HomeController < ApplicationController
 	@accounts = Accounts.get_first_hundred
   end
   
+  def contracts
+	@contracts = Contracts.get_first_hundred
+  end
+  
   def dump
-	@accounts = Accounts.get_first_hundred
+	@accounts = Contracts.get_first_hundred
   end
   
 end
