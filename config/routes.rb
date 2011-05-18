@@ -5,6 +5,7 @@ OmniauthDemo::Application.routes.draw do
   match "home/contacts", :to => 'home#contacts'
   match "home/contracts", :to => 'home#contracts'
   match "home/dump", :to => 'home#dump'
+  match "home/soql", :to => 'home#soql'
   
   get "sessions/create"
 
